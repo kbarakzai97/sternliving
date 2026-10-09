@@ -1,3 +1,4 @@
+import { withBase } from '../url'
 import logo from '../assets/Stern Life Navy Serif Wordmark.webp'
 import './Footer.css'
 
@@ -38,7 +39,7 @@ function Footer() {
           <ul>
             {links.map(({ label, href }) => (
               <li key={href}>
-                <a href={href}>{label}</a>
+                <a href={withBase(href)}>{label}</a>
               </li>
             ))}
           </ul>
@@ -49,7 +50,7 @@ function Footer() {
           <ul>
             {services.map((service) => (
               <li key={service}>
-                <a href="/services">{service}</a>
+                <a href={withBase('/services')}>{service}</a>
               </li>
             ))}
           </ul>

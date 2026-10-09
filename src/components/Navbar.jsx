@@ -1,24 +1,25 @@
+import { withBase } from '../url'
 import logo from '../assets/Stern Life Navy Serif Wordmark.webp'
 import './Navbar.css'
 
 function Navbar() {
   return (
     <header className="navbar">
-      <a href="/" className="navbar__logo">
+      <a href={withBase('/')} className="navbar__logo">
         <img src={logo} alt="Stern Life" />
       </a>
       <nav className="navbar__links">
         <div className="navbar__dropdown">
-          <a href="/#about">About</a>
+          <a href={withBase('/#about')}>About</a>
           <div className="navbar__menu">
             <div className="navbar__menu-list">
-              <a href="/our-team">Our Team</a>
-              <a href="/faq">FAQ</a>
+              <a href={withBase('/our-team')}>Our Team</a>
+              <a href={withBase('/faq')}>FAQ</a>
             </div>
           </div>
         </div>
-        <a href="/services">Services</a>
-        <a href="/contact">Contact Us</a>
+        <a href={withBase('/services')}>Services</a>
+        <a href={withBase('/contact')}>Contact Us</a>
       </nav>
     </header>
   )

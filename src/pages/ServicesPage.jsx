@@ -1,3 +1,4 @@
+import { withBase } from '../url'
 import groupIcon from '../assets/Coral Group People Icon.webp'
 import './ServicesPage.css'
 
@@ -104,7 +105,7 @@ function ServicesPage() {
           Our team will walk you through every option and help build a care plan
           around your loved one.
         </p>
-        <a href="/contact" className="services-cta__button">
+        <a href={withBase('/contact')} className="services-cta__button">
           Contact Us
         </a>
       </section>

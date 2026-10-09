@@ -24,12 +24,12 @@
     </noscript>
     <script>
       // The hero image is the LCP element on the home page; start fetching it before the JS bundle runs.
-      if (location.pathname.replace(/\/$/, '') === '') {
+      if (location.pathname === '%BASE_URL%') {
         const l = document.createElement('link')
         l.rel = 'preload'
         l.as = 'image'
         l.fetchPriority = 'high'
-        l.imageSrcset = '/hero-768.webp 768w, /hero-1280.webp 1280w, /hero-1920.webp 1920w'
+        l.imageSrcset = '%BASE_URL%hero-768.webp 768w, %BASE_URL%hero-1280.webp 1280w, %BASE_URL%hero-1920.webp 1920w'
         l.imageSizes = '100vw'
         document.head.appendChild(l)
       }
