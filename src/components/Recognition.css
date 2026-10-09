@@ -1,0 +1,132 @@
+.recognition {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 48px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 40px 88px;
+  color: #1b2f5e;
+  text-align: center;
+}
+
+.recognition__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 32px;
+}
+
+.recognition__eyebrow {
+  margin: 0 0 10px;
+  color: #f06f61;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.recognition__heading {
+  margin: 0 0 32px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.recognition__badge {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+.recognition__badge-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 170px;
+  height: 170px;
+  border: 6px solid #d4b26a;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.recognition__badge-placeholder strong {
+  font-size: 16px;
+}
+
+.recognition__stars {
+  color: #d4b26a;
+  letter-spacing: 2px;
+}
+
+.recognition__partners {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  margin: auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recognition__partner {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 120px;
+  padding: 16px;
+}
+
+.recognition__partner img {
+  width: 100%;
+  height: auto;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.recognition__partner-placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #4a5670;
+  font-size: 13px;
+}
+
+.recognition__partner-placeholder strong {
+  color: #1b2f5e;
+  font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .recognition {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 16px 24px 64px;
+  }
+}
+
+@media (max-width: 560px) {
+  .recognition {
+    padding: 8px 16px 48px;
+  }
+
+  .recognition__block {
+    padding: 32px 20px;
+  }
+
+  .recognition__heading {
+    font-size: 24px;
+  }
+
+  .recognition__partners {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .recognition__partner {
+    min-height: 90px;
+  }
+}

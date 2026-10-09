@@ -7,7 +7,9 @@ import WhyChooseUs from './components/WhyChooseUs'
 import Gallery from './components/Gallery'
 import OurPromise from './components/OurPromise'
 import Testimonials from './components/Testimonials'
+import Recognition from './components/Recognition'
 import VisitUs from './components/VisitUs'
+import JoinCommunity from './components/JoinCommunity'
 import Footer from './components/Footer'
 import OurTeam from './pages/OurTeam'
 import ServicesPage from './pages/ServicesPage'
@@ -32,7 +34,9 @@ function HomePage() {
       <Gallery />
       <OurPromise />
       <Testimonials />
+      <Recognition />
       <VisitUs />
+      <JoinCommunity />
     </>
   )
 }
