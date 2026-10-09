@@ -65,11 +65,10 @@ function About() {
         />
         <div className="about__text">
           <p className="about__eyebrow">Our Philosophy</p>
-          <h2 className="about__title">We Believe</h2>
           <p>
             At Stern Life Assisted Living, we provide compassionate,
             personalized care in a safe and welcoming environment where
-            residents can feel comfortable, supported, and at home.
+            residents can feel comfortable, supported, and at home. We believe:
           </p>
           <ul className="about__beliefs">
             {beliefs.map((belief) => (

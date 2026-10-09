@@ -20,11 +20,13 @@ function HomePage() {
       <Hero
         image={withBase('/hero-1920.webp')}
         imageSrcSet={`${withBase('/hero-768.webp')} 768w, ${withBase('/hero-1280.webp')} 1280w, ${withBase('/hero-1920.webp')} 1920w`}
-        imageAlt="Caregiver walking arm in arm with a senior woman outdoors"
+        imageAlt="Caregiver chatting with residents in a bright, homey living room"
         heading="Trusted Care & Support for Your Loved Ones"
         subtext="Personalized assisted living in a warm, home-like setting, where every resident is known by name."
         ctaLabel="Call Now"
         ctaHref="tel:+12406103769"
+        secondaryCtaLabel="Schedule a Visit"
+        secondaryCtaHref={withBase('/contact')}
       />
       <About />
       <Services />
