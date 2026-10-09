@@ -4,12 +4,17 @@ import './Navbar.css'
 function Navbar() {
   return (
     <header className="navbar">
-      <a href="#home" className="navbar__logo">
+      <a href="/" className="navbar__logo">
         <img src={logo} alt="Stern Life" />
       </a>
       <nav className="navbar__links">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <div className="navbar__dropdown">
+          <a href="/#about">About</a>
+          <div className="navbar__menu">
+            <a href="/our-team">Our Team</a>
+          </div>
+        </div>
+        <a href="/#services">Services</a>
         <a href="#contact">Contact Us</a>
       </nav>
     </header>

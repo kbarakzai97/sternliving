@@ -2,7 +2,7 @@ import './Hero.css'
 
 function Hero({ image, imageAlt, heading, subtext, ctaLabel, ctaHref }) {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <img src={image} className="hero__image" alt={imageAlt} />
       <div className="hero__overlay">
         <h1 className="hero__heading">{heading}</h1>

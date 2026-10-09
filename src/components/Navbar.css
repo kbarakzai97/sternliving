@@ -34,6 +34,33 @@
   text-decoration: underline;
 }
 
+.navbar__dropdown {
+  position: relative;
+}
+
+.navbar__menu {
+  position: absolute;
+  top: 100%;
+  left: -16px;
+  z-index: 10;
+  display: none;
+  min-width: 160px;
+  padding: 16px 0 8px;
+}
+
+.navbar__menu a {
+  display: block;
+  padding: 10px 16px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(27, 47, 94, 0.15);
+  white-space: nowrap;
+}
+
+.navbar__dropdown:hover .navbar__menu,
+.navbar__dropdown:focus-within .navbar__menu {
+  display: block;
+}
+
 @media (max-width: 640px) {
   .navbar {
     flex-direction: column;

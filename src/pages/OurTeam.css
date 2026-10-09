@@ -1,0 +1,187 @@
+.team-hero {
+  padding: 64px 40px 88px;
+  background: #1b2f5e;
+  color: #fff;
+  text-align: center;
+}
+
+.team-hero__heading {
+  margin: 0 0 40px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.team-hero__text {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.leader {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 40px;
+}
+
+.leader__photo {
+  flex: 0 0 38%;
+  aspect-ratio: 9 / 8;
+  background: #d9d9d9;
+}
+
+.leader__bio {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.leader__name {
+  margin: 0 0 32px;
+  color: #f06f61;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.leader__bio p {
+  margin: 0 0 24px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.leader__bio p:last-child {
+  margin-bottom: 0;
+}
+
+.philosophy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 72px;
+  padding: 88px max(40px, calc((100% - 1120px) / 2));
+  background: #1b2f5e;
+  color: #fff;
+}
+
+.philosophy__media {
+  position: relative;
+  padding: 0 24px 24px 0;
+}
+
+.philosophy__media::before {
+  content: '';
+  position: absolute;
+  inset: 24px 0 0 24px;
+  border-radius: 16px;
+  background: #f06f61;
+}
+
+.philosophy__image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
+.philosophy__eyebrow {
+  margin: 0 0 8px;
+  color: #f06f61;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.philosophy__heading {
+  margin: 0 0 32px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.philosophy__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.philosophy__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: #fff;
+  color: #1b2f5e;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  font-size: 17px;
+  line-height: 1.4;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.philosophy__item:hover {
+  background: #f06f61;
+  color: #fff;
+  transform: translateX(6px);
+}
+
+.philosophy__item:hover .philosophy__icon {
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.philosophy__icon {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 50%;
+  transition: box-shadow 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .team-hero {
+    padding: 48px 24px 56px;
+  }
+
+  .team-hero__heading {
+    font-size: 24px;
+  }
+
+  .leader {
+    flex-direction: column;
+  }
+
+  .philosophy {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 56px 24px;
+  }
+
+  .leader {
+    padding: 40px 24px;
+    gap: 32px;
+  }
+
+  .leader__photo {
+    flex: none;
+    width: 100%;
+  }
+
+  .leader__name {
+    font-size: 22px;
+  }
+
+  .philosophy__heading {
+    font-size: 28px;
+  }
+}
