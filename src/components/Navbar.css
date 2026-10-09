@@ -30,8 +30,13 @@
   text-decoration: none;
 }
 
-.navbar__links a:hover {
-  text-decoration: underline;
+.navbar__links a {
+  transition: color 0.15s ease;
+}
+
+.navbar__links a:hover,
+.navbar__links a:focus-visible {
+  color: #f06f61;
 }
 
 .navbar__dropdown {
@@ -59,6 +64,14 @@
   display: block;
   padding: 10px 16px;
   white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.navbar__menu a:hover,
+.navbar__menu a:focus-visible {
+  background: #fdf1ef;
+  color: #f06f61;
+  text-decoration: none;
 }
 
 .navbar__dropdown:hover .navbar__menu,
