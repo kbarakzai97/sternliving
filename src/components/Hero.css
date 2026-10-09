@@ -54,11 +54,15 @@
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
+  border: 2px solid #f06f61;
   border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.hero__cta:hover {
-  background: #c76a48;
+.hero__cta:hover,
+.hero__cta:focus-visible {
+  background: #fff;
+  color: #f06f61;
 }
 
 @media (max-width: 640px) {

@@ -119,7 +119,10 @@ function OurTeam() {
             </p>
             <ul className="team-info__list">
               {teamPerks.map((perk) => (
-                <li key={perk}>{perk}</li>
+                <li key={perk}>
+                  <img src={checkIcon} alt="" />
+                  <span>{perk}</span>
+                </li>
               ))}
             </ul>
           </div>

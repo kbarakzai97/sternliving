@@ -23,43 +23,23 @@
 
 .services-hero__text {
   max-width: 680px;
-  margin: 0 auto 36px;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.88);
 }
 
-.services-hero__levels {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.services-hero__levels li {
-  padding: 8px 22px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 999px;
-  font-size: 15px;
-  font-weight: 600;
-}
-
 .categories {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 0 40px 88px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 32px;
+  padding: 0 max(40px, calc((100% - 1160px) / 2)) 88px;
   background: linear-gradient(#1b2f5e 0 48px, #fdf1ef 48px);
 }
 
 .category {
-  width: 100%;
-  max-width: 1060px;
-  margin: 0 auto;
-  padding: 48px;
+  padding: 40px;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 12px 32px rgba(27, 47, 94, 0.1);
@@ -67,8 +47,9 @@
 
 .category__header {
   display: flex;
-  align-items: center;
-  gap: 28px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
   padding-bottom: 32px;
   margin-bottom: 32px;
   border-bottom: 1px solid #f1e3e0;
@@ -77,8 +58,8 @@
 .category__icon {
   flex: 0 0 auto;
   display: block;
-  width: 96px;
-  height: 96px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -100,8 +81,8 @@
 
 .category__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px 40px;
+  grid-template-columns: 1fr;
+  gap: 14px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -133,8 +114,8 @@
 
 .services-cta {
   padding: 72px 40px;
-  background: #f06f61;
-  color: #fff;
+  background: #fff;
+  color: #1b2f5e;
   text-align: center;
 }
 
@@ -147,6 +128,7 @@
 .services-cta__text {
   max-width: 560px;
   margin: 0 auto 32px;
+  color: #4a5670;
   font-size: 17px;
   line-height: 1.6;
 }
@@ -154,7 +136,7 @@
 .services-cta__button {
   display: inline-block;
   padding: 14px 36px;
-  background: #1b2f5e;
+  background: #f06f61;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -164,7 +146,14 @@
 }
 
 .services-cta__button:hover {
-  background: #26407a;
+  background: #1b2f5e;
+}
+
+@media (max-width: 900px) {
+  .categories {
+    grid-template-columns: 1fr;
+    padding: 0 max(24px, calc((100% - 680px) / 2)) 72px;
+  }
 }
 
 @media (max-width: 768px) {

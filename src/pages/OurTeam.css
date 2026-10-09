@@ -186,18 +186,23 @@
 .team-info__list {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
   color: #333;
 }
 
-.team-info__list li::before {
-  content: '\2713';
-  margin-right: 10px;
-  color: #f06f61;
-  font-weight: 700;
+.team-info__list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.team-info__list img {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 768px) {

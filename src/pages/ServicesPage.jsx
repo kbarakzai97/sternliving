@@ -59,8 +59,6 @@ function HouseIcon() {
   )
 }
 
-const levels = ['Level 1', 'Level 2', 'Level 3']
-
 function ServicesPage() {
   return (
     <>
@@ -73,11 +71,6 @@ function ServicesPage() {
           institution. We proudly offer Level 1, Level 2, and Level 3 assisted
           living services at both of our Frederick locations.
         </p>
-        <ul className="services-hero__levels">
-          {levels.map((level) => (
-            <li key={level}>{level}</li>
-          ))}
-        </ul>
       </section>
 
       <section className="categories">
