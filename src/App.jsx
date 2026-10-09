@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import Services from './components/Services'
 import heroImg from './assets/heroimage.webp'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         ctaHref="#contact"
       />
       <About />
+      <Services />
     </>
   )
 }
