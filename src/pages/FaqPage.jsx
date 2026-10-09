@@ -177,10 +177,9 @@ function FaqPage() {
   return (
     <>
       <section className="faq-hero">
-        <p className="faq-hero__eyebrow">Our Care Pledge</p>
         <h1 className="faq-hero__heading">Frequently Asked Questions</h1>
         <p className="faq-hero__text">
-          Stern Life Assisted Living – Frederick, MD
+          Stern Life Assisted Living
         </p>
       </section>
 
@@ -198,13 +197,6 @@ function FaqPage() {
         <p className="faq-cta__text">
           We’re happy to speak with you personally.
         </p>
-        <div className="faq-cta__contacts">
-          <a href="tel:+12406103769">Call: 240-610-3769</a>
-          <a href="mailto:sternlifeinc@gmail.com">sternlifeinc@gmail.com</a>
-          <a href="mailto:enquiries@sternlifeassistedliving.com">
-            enquiries@sternlifeassistedliving.com
-          </a>
-        </div>
         <a href="tel:+12406103769" className="faq-cta__button">
           Schedule a Tour Today
         </a>

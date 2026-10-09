@@ -56,7 +56,7 @@ function Icon({ name }) {
   )
 }
 
-function VisitUs() {
+function VisitUs({ light = false }) {
   const [selected, setSelected] = useState(0)
   const open = isOfficeOpen()
   const location = locations[selected]
@@ -65,7 +65,7 @@ function VisitUs() {
   )
 
   return (
-    <section className="visit" id="visit">
+    <section className={light ? 'visit visit--light' : 'visit'} id="visit">
       <div className="visit__content">
         <p className="visit__eyebrow">Stern Life Assisted Living</p>
         <h2 className="visit__heading">Visit Us in Frederick</h2>

@@ -18,7 +18,7 @@ function ContactPage() {
           </a>
         </div>
       </section>
-      <VisitUs />
+      <VisitUs light />
     </>
   )
 }
