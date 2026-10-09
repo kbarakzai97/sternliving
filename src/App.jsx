@@ -11,17 +11,14 @@ import Recognition from './components/Recognition'
 import VisitUs from './components/VisitUs'
 import JoinCommunity from './components/JoinCommunity'
 import Footer from './components/Footer'
-import OurTeam from './pages/OurTeam'
-import ServicesPage from './pages/ServicesPage'
-import FaqPage from './pages/FaqPage'
-import ContactPage from './pages/ContactPage'
-import heroImg from './assets/heroimage.webp'
+import pages from './routes'
 
 function HomePage() {
   return (
     <>
       <Hero
-        image={heroImg}
+        image="/hero-1920.webp"
+        imageSrcSet="/hero-768.webp 768w, /hero-1280.webp 1280w, /hero-1920.webp 1920w"
         imageAlt="Caregiver walking arm in arm with a senior woman outdoors"
         heading="Trusted Care & Support for Your Loved Ones"
         subtext="Personalized assisted living in a warm, home-like setting, where every resident is known by name."
@@ -41,15 +38,9 @@ function HomePage() {
   )
 }
 
-const pages = {
-  '/our-team': OurTeam,
-  '/services': ServicesPage,
-  '/faq': FaqPage,
-  '/contact': ContactPage,
-}
-
-function App() {
-  const Page = pages[window.location.pathname.replace(/\/$/, '')] ?? HomePage
+// `path` is passed in when prerendering; in the browser it comes from the URL.
+function App({ path = window.location.pathname }) {
+  const Page = pages[path.replace(/\/$/, '')] ?? HomePage
 
   // Sections render after the browser's initial jump, so scroll to "/#about"-style links once mounted.
   useEffect(() => {

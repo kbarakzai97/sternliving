@@ -1,4 +1,4 @@
-import logo from '../assets/Stern Life Navy Serif Wordmark.png'
+import logo from '../assets/Stern Life Navy Serif Wordmark.webp'
 import './Navbar.css'
 
 function Navbar() {

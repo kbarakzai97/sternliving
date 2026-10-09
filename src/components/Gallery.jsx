@@ -36,6 +36,7 @@ function Gallery() {
     <section className="gallery">
       {photos.map(({ src, alt, className }) => (
         <img
+          loading="lazy"
           key={src}
           src={src}
           className={`gallery__image ${className ?? ''}`.trim()}

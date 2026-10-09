@@ -1,4 +1,4 @@
-import logo from '../assets/Stern Life Navy Serif Wordmark.png'
+import logo from '../assets/Stern Life Navy Serif Wordmark.webp'
 import './Footer.css'
 
 const links = [
@@ -26,7 +26,7 @@ function Footer() {
     <footer className="footer" id="contact">
       <div className="footer__grid">
         <div className="footer__brand">
-          <img src={logo} className="footer__logo" alt="Stern Life" />
+          <img loading="lazy" src={logo} className="footer__logo" alt="Stern Life" />
           <p>
             Compassionate, personalized assisted living in a warm, home-like
             setting.

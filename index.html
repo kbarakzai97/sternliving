@@ -6,9 +6,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <script>
+      // The hero image is the LCP element on the home page; start fetching it before the JS bundle runs.
+      if (location.pathname.replace(/\/$/, '') === '') {
+        const l = document.createElement('link')
+        l.rel = 'preload'
+        l.as = 'image'
+        l.fetchPriority = 'high'
+        l.imageSrcset = '/hero-768.webp 768w, /hero-1280.webp 1280w, /hero-1920.webp 1920w'
+        l.imageSizes = '100vw'
+        document.head.appendChild(l)
+      }
+    </script>
     <title>Stern Life</title>
   </head>
   <body>

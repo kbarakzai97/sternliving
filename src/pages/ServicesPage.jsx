@@ -1,4 +1,4 @@
-import groupIcon from '../assets/Coral Group People Icon.png'
+import groupIcon from '../assets/Coral Group People Icon.webp'
 import './ServicesPage.css'
 
 const categories = [

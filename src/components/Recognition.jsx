@@ -27,6 +27,7 @@ function Recognition() {
         <h2 className="recognition__heading">Featured In</h2>
         {featured.logo ? (
           <img
+            loading="lazy"
             src={featured.logo}
             className="recognition__badge"
             alt={`${featured.name} – ${featured.source}`}
@@ -48,7 +49,7 @@ function Recognition() {
           {partners.map(({ name, tagline, logo }) => (
             <li className="recognition__partner" key={name}>
               {logo ? (
-                <img src={logo} alt={name} />
+                <img loading="lazy" src={logo} alt={name} />
               ) : (
                 <span className="recognition__partner-placeholder">
                   <strong>{name}</strong>

@@ -1,4 +1,4 @@
-import checkIcon from '../assets/White Checkmark Circle Icon.png'
+import checkIcon from '../assets/White Checkmark Circle Icon.webp'
 import './WhyChooseUs.css'
 
 const reasons = [
@@ -29,7 +29,7 @@ function WhyChooseUs() {
       <ul className="why__list">
         {reasons.map((reason) => (
           <li className="why__item" key={reason}>
-            <img src={checkIcon} className="why__icon" alt="" />
+            <img loading="lazy" src={checkIcon} className="why__icon" alt="" />
             <span>{reason}</span>
           </li>
         ))}

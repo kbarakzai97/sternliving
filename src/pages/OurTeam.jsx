@@ -1,5 +1,5 @@
 import philosophyImg from '../assets/team-philosophy.webp'
-import checkIcon from '../assets/Coral Circle Checkmark Icon.png'
+import checkIcon from '../assets/Coral Circle Checkmark Icon.webp'
 import paintingImg from '../assets/team-painting.webp'
 import diningImg from '../assets/team-dining.webp'
 import './OurTeam.css'
@@ -84,6 +84,7 @@ function OurTeam() {
       <section className="philosophy">
         <div className="philosophy__media">
           <img
+            loading="lazy"
             src={philosophyImg}
             className="philosophy__image"
             alt="Caregiver walking hand in hand with a smiling senior woman in a garden"
@@ -94,7 +95,7 @@ function OurTeam() {
           <ul className="philosophy__list">
             {beliefs.map((belief) => (
               <li className="philosophy__item" key={belief}>
-                <img src={checkIcon} className="philosophy__icon" alt="" />
+                <img loading="lazy" src={checkIcon} className="philosophy__icon" alt="" />
                 <span>{belief}</span>
               </li>
             ))}
@@ -105,6 +106,7 @@ function OurTeam() {
       <section className="team-info">
         <div className="team-info__row">
           <img
+            loading="lazy"
             src={paintingImg}
             className="team-info__image"
             alt="Senior woman embracing a senior man as he paints"
@@ -120,7 +122,7 @@ function OurTeam() {
             <ul className="team-info__list">
               {teamPerks.map((perk) => (
                 <li key={perk}>
-                  <img src={checkIcon} alt="" />
+                  <img loading="lazy" src={checkIcon} alt="" />
                   <span>{perk}</span>
                 </li>
               ))}
@@ -130,6 +132,7 @@ function OurTeam() {
 
         <div className="team-info__row team-info__row--reverse">
           <img
+            loading="lazy"
             src={diningImg}
             className="team-info__image"
             alt="Caregiver sharing a laugh with residents at the breakfast table"

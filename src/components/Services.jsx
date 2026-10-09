@@ -1,9 +1,9 @@
-import clockIcon from '../assets/24_7 Clock Refresh Icon.png'
-import capsuleIcon from '../assets/White Capsule and Scored Tablet Icon.png'
-import mindIcon from '../assets/Heart and Mind Halo Icon.png'
-import caregiverIcon from '../assets/Caregiver Assisting Elderly Person Icon.png'
-import plateIcon from '../assets/Healthy Plate with Fork and Knife.png'
-import handsIcon from '../assets/Caring Hands Embracing a Heart.png'
+import clockIcon from '../assets/24_7 Clock Refresh Icon.webp'
+import capsuleIcon from '../assets/White Capsule and Scored Tablet Icon.webp'
+import mindIcon from '../assets/Heart and Mind Halo Icon.webp'
+import caregiverIcon from '../assets/Caregiver Assisting Elderly Person Icon.webp'
+import plateIcon from '../assets/Healthy Plate with Fork and Knife.webp'
+import handsIcon from '../assets/Caring Hands Embracing a Heart.webp'
 import './Services.css'
 
 const services = [
@@ -46,7 +46,7 @@ function Services() {
       <ul className="services__grid">
         {services.map(({ icon, title, text }) => (
           <li className="services__item" key={title}>
-            <img src={icon} className="services__icon" alt="" />
+            <img loading="lazy" src={icon} className="services__icon" alt="" />
             <div>
               <h3 className="services__title">{title}</h3>
               <p className="services__text">{text}</p>
