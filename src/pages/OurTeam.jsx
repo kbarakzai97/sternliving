@@ -1,5 +1,7 @@
-import philosophyImg from '../assets/heroimage.webp'
+import philosophyImg from '../assets/team-philosophy.webp'
 import checkIcon from '../assets/Coral Circle Checkmark Icon.png'
+import paintingImg from '../assets/team-painting.webp'
+import diningImg from '../assets/team-dining.webp'
 import './OurTeam.css'
 
 const beliefs = [
@@ -7,6 +9,13 @@ const beliefs = [
   'Care plans should be individualized',
   'Independence should be supported whenever possible',
   'Families should be active partners',
+]
+
+const teamPerks = [
+  'Consistent caregivers',
+  'Direct access to leadership',
+  'Higher staff-to-resident attention',
+  'Personalized communication',
 ]
 
 function OurTeam() {
@@ -77,11 +86,10 @@ function OurTeam() {
           <img
             src={philosophyImg}
             className="philosophy__image"
-            alt="Caregiver walking arm in arm with a senior woman outdoors"
+            alt="Caregiver walking hand in hand with a smiling senior woman in a garden"
           />
         </div>
         <div className="philosophy__text">
-          <p className="philosophy__eyebrow">At Stern Life, we believe</p>
           <h2 className="philosophy__heading">Our Care Philosophy</h2>
           <ul className="philosophy__list">
             {beliefs.map((belief) => (
@@ -91,6 +99,48 @@ function OurTeam() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="team-info">
+        <div className="team-info__row">
+          <img
+            src={paintingImg}
+            className="team-info__image"
+            alt="Senior woman embracing a senior man as he paints"
+          />
+          <div className="team-info__text">
+            <h2 className="team-info__heading">A Small Team With a Big Heart</h2>
+            <p>
+              Unlike large corporate campuses where staff may rotate
+              frequently, Stern Life operates small residential homes. This
+              allows our team to build stronger, more meaningful relationships
+              with residents and families.
+            </p>
+            <ul className="team-info__list">
+              {teamPerks.map((perk) => (
+                <li key={perk}>{perk}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="team-info__row team-info__row--reverse">
+          <img
+            src={diningImg}
+            className="team-info__image"
+            alt="Caregiver sharing a laugh with residents at the breakfast table"
+          />
+          <div className="team-info__text">
+            <h2 className="team-info__heading">
+              Safety &amp; Professional Standards
+            </h2>
+            <p>
+              Our team operates in compliance with Maryland Office of Health
+              Care Quality (OHCQ) standards and follows strict medication,
+              safety, and infection control protocols.
+            </p>
+          </div>
         </div>
       </section>
     </>

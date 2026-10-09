@@ -6,8 +6,13 @@ import Services from './components/Services'
 import WhyChooseUs from './components/WhyChooseUs'
 import Gallery from './components/Gallery'
 import OurPromise from './components/OurPromise'
+import Testimonials from './components/Testimonials'
+import VisitUs from './components/VisitUs'
 import Footer from './components/Footer'
 import OurTeam from './pages/OurTeam'
+import ServicesPage from './pages/ServicesPage'
+import FaqPage from './pages/FaqPage'
+import ContactPage from './pages/ContactPage'
 import heroImg from './assets/heroimage.webp'
 
 function HomePage() {
@@ -19,19 +24,28 @@ function HomePage() {
         heading="Trusted Care & Support for Your Loved Ones"
         subtext="Personalized assisted living in a warm, home-like setting, where every resident is known by name."
         ctaLabel="Call Now"
-        ctaHref="#contact"
+        ctaHref="tel:+12406103769"
       />
       <About />
       <Services />
       <WhyChooseUs />
       <Gallery />
       <OurPromise />
+      <Testimonials />
+      <VisitUs />
     </>
   )
 }
 
+const pages = {
+  '/our-team': OurTeam,
+  '/services': ServicesPage,
+  '/faq': FaqPage,
+  '/contact': ContactPage,
+}
+
 function App() {
-  const isTeamPage = window.location.pathname.replace(/\/$/, '') === '/our-team'
+  const Page = pages[window.location.pathname.replace(/\/$/, '')] ?? HomePage
 
   // Sections render after the browser's initial jump, so scroll to "/#about"-style links once mounted.
   useEffect(() => {
@@ -43,7 +57,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <main>{isTeamPage ? <OurTeam /> : <HomePage />}</main>
+      <main>
+        <Page />
+      </main>
       <Footer />
     </>
   )

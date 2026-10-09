@@ -11,11 +11,14 @@ function Navbar() {
         <div className="navbar__dropdown">
           <a href="/#about">About</a>
           <div className="navbar__menu">
-            <a href="/our-team">Our Team</a>
+            <div className="navbar__menu-list">
+              <a href="/our-team">Our Team</a>
+              <a href="/faq">FAQ</a>
+            </div>
           </div>
         </div>
-        <a href="/#services">Services</a>
-        <a href="#contact">Contact Us</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact Us</a>
       </nav>
     </header>
   )

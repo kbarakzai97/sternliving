@@ -5,7 +5,9 @@ const links = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/#about' },
   { label: 'Our Team', href: '/our-team' },
-  { label: 'Services', href: '/#services' },
+  { label: 'Services', href: '/services' },
+  { label: 'FAQ', href: '/faq' },
+  { label: 'Contact Us', href: '/contact' },
   { label: 'Why Choose Us', href: '/#why-us' },
   { label: 'Our Promise', href: '/#promise' },
 ]
@@ -47,7 +49,7 @@ function Footer() {
           <ul>
             {services.map((service) => (
               <li key={service}>
-                <a href="/#services">{service}</a>
+                <a href="/services">{service}</a>
               </li>
             ))}
           </ul>
@@ -56,14 +58,19 @@ function Footer() {
         <div className="footer__col">
           <h3 className="footer__title">Contact Us</h3>
           <ul>
-            {/* TODO: replace with real contact details */}
             <li>
-              <a href="tel:+10000000000">(000) 000-0000</a>
+              <a href="tel:+12406103769">(240) 610-3769</a>
             </li>
             <li>
-              <a href="mailto:info@example.com">info@example.com</a>
+              <a href="mailto:sternlifeinc@gmail.com">sternlifeinc@gmail.com</a>
             </li>
-            <li>123 Street Name, City, State</li>
+            <li>
+              <a href="mailto:enquiries@sternlifeassistedliving.com">
+                enquiries@sternlifeassistedliving.com
+              </a>
+            </li>
+            <li>228 Thames Dr, Frederick, MD</li>
+            <li>903 Walnut St, Frederick, MD</li>
           </ul>
         </div>
       </div>

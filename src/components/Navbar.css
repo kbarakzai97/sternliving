@@ -48,11 +48,16 @@
   padding: 16px 0 8px;
 }
 
+.navbar__menu-list {
+  padding: 6px 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(27, 47, 94, 0.15);
+}
+
 .navbar__menu a {
   display: block;
   padding: 10px 16px;
-  background: #fff;
-  box-shadow: 0 8px 20px rgba(27, 47, 94, 0.15);
   white-space: nowrap;
 }
 
