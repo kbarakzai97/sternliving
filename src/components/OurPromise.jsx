@@ -41,9 +41,6 @@ function OurPromise() {
       <ul className="promise__grid">
         {promises.map(({ title, text }, i) => (
           <li className="promise__card" key={title}>
-            <span className="promise__number">
-              {String(i + 1).padStart(2, '0')}
-            </span>
             <h3 className="promise__title">{title}</h3>
             <p className="promise__text">{text}</p>
           </li>

@@ -107,7 +107,6 @@ function Gallery() {
       </div>
 
       <div className="gallery__text">
-        <p className="gallery__eyebrow">See Where You'll Live</p>
         <h2 className="gallery__heading">Tour Our Homes</h2>
         <p>
           Our two homes on Thames Drive and Walnut Street in Frederick are real
