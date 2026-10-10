@@ -118,6 +118,7 @@
     gap: 40px;
   }
 
+  .about__story .about__image,
   .about__philosophy .about__image {
     order: 1;
   }

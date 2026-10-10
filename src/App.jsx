@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import TopBar from './components/TopBar'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -17,7 +18,9 @@ import { withBase } from './url'
 function HomePage() {
   return (
     <>
+      <TopBar />
       <Hero
+        header={<Navbar />}
         image={withBase('/hero-1920.webp')}
         imageSrcSet={`${withBase('/hero-768.webp')} 768w, ${withBase('/hero-1280.webp')} 1280w, ${withBase('/hero-1920.webp')} 1920w`}
         imageAlt="Caregiver chatting with residents in a bright, homey living room"
@@ -54,7 +57,7 @@ function App({ path = window.location.pathname.slice(import.meta.env.BASE_URL.le
 
   return (
     <>
-      <Navbar />
+      {Page !== HomePage && <Navbar />}
       <main>
         <Page />
       </main>

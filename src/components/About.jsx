@@ -19,6 +19,13 @@ function About() {
   return (
     <section className="about" id="about">
       <div className="about__story">
+        <img
+          loading="lazy"
+          src={cardsImg}
+          className="about__image"
+          alt="Senior couple playing cards together"
+        />
+
         <div className="about__text">
           <p className="about__eyebrow">About Us</p>
           <h2 className="about__title">
@@ -47,22 +54,9 @@ function About() {
             ))}
           </dl>
         </div>
-
-        <img
-          loading="lazy"
-          src={cardsImg}
-          className="about__image"
-          alt="Senior couple playing cards together"
-        />
       </div>
 
       <div className="about__philosophy">
-        <img
-          loading="lazy"
-          src={gardeningImg}
-          className="about__image about__image--philosophy"
-          alt="Senior couple tending to houseplants together"
-        />
         <div className="about__text">
           <p className="about__eyebrow">Our Philosophy</p>
           <p>
@@ -84,6 +78,12 @@ function About() {
             true sense of belonging.
           </p>
         </div>
+        <img
+          loading="lazy"
+          src={gardeningImg}
+          className="about__image about__image--philosophy"
+          alt="Senior couple tending to houseplants together"
+        />
       </div>
     </section>
   )
