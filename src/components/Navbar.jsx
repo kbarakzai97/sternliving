@@ -7,6 +7,7 @@ function Navbar() {
     <header className="navbar">
       <a href={withBase('/')} className="navbar__logo">
         <img src={logo} alt="Stern Life" />
+        <span className="navbar__tagline">Residential Assisted Living</span>
       </a>
       <nav className="navbar__links">
         <div className="navbar__dropdown">
