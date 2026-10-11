@@ -1,6 +1,7 @@
 .why {
   display: flex;
   align-items: stretch;
+  background: #faf7f2;
 }
 
 .why__text {

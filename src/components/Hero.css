@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   min-height: min(100svh, 880px);
+  background: #faf7f2;
 }
 
 .hero__main {
@@ -11,6 +12,7 @@
 
 .hero .navbar {
   gap: 24px;
+  background: transparent;
   box-shadow: none;
 }
 

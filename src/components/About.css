@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 104px;
-  max-width: 1160px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 96px 40px;
   color: #1b2f5e;
@@ -11,9 +11,17 @@
 .about__story,
 .about__philosophy {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
-  gap: 72px;
+  gap: 64px;
+}
+
+/* The photo column gets the larger share; the photo is first in the story row and last in the philosophy row. */
+.about__story {
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+}
+
+.about__philosophy {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
 }
 
 
@@ -54,13 +62,13 @@
 .about__image {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .about__image--philosophy {
-  aspect-ratio: 1;
+  aspect-ratio: 5 / 4;
 }
 
 .about__beliefs {
