@@ -18,7 +18,6 @@ function Hero({
       <div className="hero__main">
         {header}
         <div className="hero__content">
-          {eyebrow && <p className="hero__eyebrow">{eyebrow}</p>}
           <h1 className="hero__heading">{heading}</h1>
           {subtext && <p className="hero__subtext">{subtext}</p>}
           <div className="hero__actions">
