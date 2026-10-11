@@ -55,9 +55,6 @@ function JoinCommunity() {
           </p>
         ) : (
           <form className="community__form" onSubmit={handleSubmit}>
-            <label className="community__label" htmlFor="community-email">
-              Email address
-            </label>
             <div className="community__field">
               <input
                 id="community-email"
