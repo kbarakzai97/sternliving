@@ -15,7 +15,6 @@
   gap: 64px;
 }
 
-/* The photo column gets the larger share; the photo is first in the story row and last in the philosophy row. */
 .about__story {
   grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
 }
@@ -34,7 +33,7 @@
 
 .about__text > p {
   margin: 0 0 16px;
-  color: #4a5670;
+  color: black;
   line-height: 1.7;
 }
 
@@ -101,7 +100,7 @@
   margin: 0;
   padding: 4px 0 4px 20px;
   border-left: 4px solid var(--coral);
-  color: #1b2f5e;
+  color: black;
   font-size: 17px;
   font-style: italic;
 }

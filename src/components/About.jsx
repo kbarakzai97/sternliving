@@ -58,7 +58,6 @@ function About() {
 
       <div className="about__philosophy">
         <div className="about__text">
-          <p className="about__eyebrow">Our Philosophy</p>
           <p>
             At Stern Life Assisted Living, we provide compassionate,
             personalized care in a safe and welcoming environment where

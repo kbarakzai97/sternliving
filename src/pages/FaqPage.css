@@ -94,7 +94,7 @@
 
 .faq__answer {
   padding: 0 28px 26px;
-  color: #333;
+  color: black;
   font-size: 16px;
   line-height: 1.65;
 }
@@ -162,7 +162,7 @@
 .faq-cta__text {
   margin: 0 0 28px;
   font-size: 17px;
-  color: #4a5670;
+  color: black;
 }
 
 .faq-cta__contacts {

@@ -51,7 +51,7 @@
 .leader__bio p {
   margin: 0 0 24px;
   line-height: 1.6;
-  color: #333;
+  color: black;
 }
 
 .leader__bio p:last-child {
@@ -177,7 +177,7 @@
 .team-info__text p {
   margin: 0 0 20px;
   line-height: 1.6;
-  color: #333;
+  color: black;
 }
 
 .team-info__text p:last-child {

@@ -26,7 +26,7 @@
 
 .gallery__text > p:not(.gallery__eyebrow) {
   margin: 0 0 16px;
-  color: #4a5670;
+  color: black;
   line-height: 1.7;
 }
 
