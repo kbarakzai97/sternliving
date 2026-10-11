@@ -18,7 +18,7 @@
 
 .recognition__eyebrow {
   margin: 0 0 10px;
-  color: #f06f61;
+  color: var(--coral-text);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.16em;

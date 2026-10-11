@@ -19,7 +19,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #f06f61;
+  color: var(--coral-text);
 }
 
 .community__heading {
@@ -65,7 +65,7 @@
 }
 
 .community__field input::placeholder {
-  color: #8a93a8;
+  color: var(--muted);
 }
 
 .community__field:focus-within {

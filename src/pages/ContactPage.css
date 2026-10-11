@@ -35,7 +35,7 @@
 }
 
 .contact-hero__links a:hover {
-  color: #f06f61;
+  color: var(--coral-on-dark);
 }
 
 @media (max-width: 640px) {

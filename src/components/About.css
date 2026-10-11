@@ -39,7 +39,7 @@
 }
 
 .about__highlight dt {
-  color: #f06f61;
+  color: var(--coral-text);
   font-size: 44px;
   font-weight: 700;
   line-height: 1;
@@ -82,7 +82,7 @@
   line-height: 1.45;
 }
 
-.about__beliefs img {
+.about__beliefs .check-icon {
   flex: 0 0 auto;
   width: 22px;
   height: 22px;
@@ -92,7 +92,7 @@
 .about__text > .about__note {
   margin: 0;
   padding: 4px 0 4px 20px;
-  border-left: 4px solid #f06f61;
+  border-left: 4px solid var(--coral);
   color: #1b2f5e;
   font-size: 17px;
   font-style: italic;

@@ -1,5 +1,5 @@
 import philosophyImg from '../assets/team-philosophy.webp'
-import checkIcon from '../assets/Coral Circle Checkmark Icon.webp'
+import CheckIcon from '../components/CheckIcon'
 import paintingImg from '../assets/team-painting.webp'
 import diningImg from '../assets/team-dining.webp'
 import './OurTeam.css'
@@ -95,7 +95,7 @@ function OurTeam() {
           <ul className="philosophy__list">
             {beliefs.map((belief) => (
               <li className="philosophy__item" key={belief}>
-                <img loading="lazy" src={checkIcon} className="philosophy__icon" alt="" />
+                <CheckIcon className="philosophy__icon" />
                 <span>{belief}</span>
               </li>
             ))}
@@ -122,7 +122,7 @@ function OurTeam() {
             <ul className="team-info__list">
               {teamPerks.map((perk) => (
                 <li key={perk}>
-                  <img loading="lazy" src={checkIcon} alt="" />
+                  <CheckIcon />
                   <span>{perk}</span>
                 </li>
               ))}

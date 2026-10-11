@@ -44,7 +44,7 @@
   width: 32px;
   height: 3px;
   border-radius: 2px;
-  background: #f06f61;
+  background: var(--coral);
 }
 
 .footer__col ul {
@@ -63,7 +63,7 @@
 }
 
 .footer a:hover {
-  color: #f06f61;
+  color: var(--coral-on-dark);
 }
 
 .footer__bottom {

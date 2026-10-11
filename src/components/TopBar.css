@@ -32,7 +32,7 @@
 
 .topbar__link:hover,
 .topbar__link:focus-visible {
-  color: #f06f61;
+  color: var(--coral-text);
 }
 
 .topbar__link svg {

@@ -47,7 +47,7 @@
   line-height: 1.45;
 }
 
-.gallery__features img {
+.gallery__features .check-icon {
   flex: 0 0 auto;
   width: 22px;
   height: 22px;
@@ -58,12 +58,12 @@
   display: inline-block;
   margin-top: 12px;
   padding: 16px 32px;
-  background: #f06f61;
+  background: var(--coral-text);
   color: #fff;
   font-size: 17px;
   font-weight: 700;
   text-decoration: none;
-  border: 2px solid #f06f61;
+  border: 2px solid var(--coral-text);
   border-radius: 999px;
   transition: background 0.2s ease, color 0.2s ease;
 }
@@ -71,7 +71,7 @@
 .gallery__cta:hover,
 .gallery__cta:focus-visible {
   background: #fff;
-  color: #f06f61;
+  color: var(--coral-text);
 }
 
 /* Arrows sit on top of the photo edges so the photo can use the full column width. */
@@ -129,8 +129,8 @@
 
 .gallery__arrow:hover,
 .gallery__arrow:focus-visible {
-  background: #f06f61;
-  border-color: #f06f61;
+  background: var(--coral-text);
+  border-color: var(--coral-text);
   color: #fff;
 }
 
@@ -154,7 +154,7 @@
 
 .gallery__dot--active {
   width: 28px;
-  background: #f06f61;
+  background: var(--coral);
 }
 
 @media (max-width: 900px) {

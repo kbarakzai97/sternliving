@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { withBase } from '../url'
-import checkIcon from '../assets/Coral Circle Checkmark Icon.webp'
+import CheckIcon from './CheckIcon'
 import livingImg from '../assets/home_living.webp'
 import bedroom2Img from '../assets/home_bedroom2.webp'
 import bath2Img from '../assets/home_bath2.webp'
@@ -116,7 +116,7 @@ function Gallery() {
         <ul className="gallery__features">
           {features.map((feature) => (
             <li key={feature}>
-              <img loading="lazy" src={checkIcon} alt="" />
+              <CheckIcon />
               <span>{feature}</span>
             </li>
           ))}

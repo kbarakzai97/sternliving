@@ -52,7 +52,7 @@
 .promise__number {
   display: block;
   margin-bottom: 16px;
-  color: #f06f61;
+  color: var(--coral-on-dark);
   font-size: 40px;
   font-weight: 700;
   line-height: 1;
@@ -75,7 +75,7 @@
   width: 40px;
   height: 3px;
   border-radius: 2px;
-  background: #f06f61;
+  background: var(--coral);
 }
 
 .promise__text {

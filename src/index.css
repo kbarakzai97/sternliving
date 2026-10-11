@@ -2,6 +2,15 @@
   --text: #1b2a4a;
   --bg: #fff;
 
+  /* Brand coral is for decoration only (dots, underlines, icon circles); it's too light for text. */
+  --coral: #f06f61;
+  /* Text, and backgrounds behind white text, on white or light pink: 5.1:1 on white, 4.6:1 on #fdf1ef. */
+  --coral-text: #bb493c;
+  /* Text on navy: 4.9:1 on #1b2f5e. */
+  --coral-on-dark: #f27d71;
+  --muted: #6b768f;
+  --success: #36855b;
+
   --sans: 'Istok Web', system-ui, 'Segoe UI', Roboto, sans-serif;
 
   font: 18px/145% var(--sans);

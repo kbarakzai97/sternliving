@@ -1,6 +1,6 @@
 import cardsImg from '../assets/imag2.webp'
 import gardeningImg from '../assets/image1.webp'
-import checkIcon from '../assets/Coral Circle Checkmark Icon.webp'
+import CheckIcon from './CheckIcon'
 import './About.css'
 
 const beliefs = [
@@ -67,7 +67,7 @@ function About() {
           <ul className="about__beliefs">
             {beliefs.map((belief) => (
               <li key={belief}>
-                <img loading="lazy" src={checkIcon} alt="" />
+                <CheckIcon />
                 <span>{belief}</span>
               </li>
             ))}

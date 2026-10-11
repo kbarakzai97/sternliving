@@ -7,7 +7,7 @@
 
 .services-hero__eyebrow {
   margin: 0 0 12px;
-  color: #f06f61;
+  color: var(--coral-on-dark);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -106,7 +106,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #f06f61;
+  background: var(--coral-text);
   color: #fff;
   font-size: 12px;
   font-weight: 700;
@@ -136,7 +136,7 @@
 .services-cta__button {
   display: inline-block;
   padding: 14px 36px;
-  background: #f06f61;
+  background: var(--coral-text);
   color: #fff;
   font-size: 16px;
   font-weight: 600;

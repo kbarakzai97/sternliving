@@ -36,7 +36,7 @@
 
 .navbar__links a:hover,
 .navbar__links a:focus-visible {
-  color: #f06f61;
+  color: var(--coral-text);
 }
 
 .navbar__dropdown {
@@ -70,7 +70,7 @@
 .navbar__menu a:hover,
 .navbar__menu a:focus-visible {
   background: #fdf1ef;
-  color: #f06f61;
+  color: var(--coral-text);
   text-decoration: none;
 }
 

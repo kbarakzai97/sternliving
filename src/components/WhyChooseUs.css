@@ -11,7 +11,7 @@
 
 .why__heading {
   margin: 0 0 24px;
-  color: #f06f61;
+  color: var(--coral-text);
   font-size: 32px;
   font-weight: 400;
 }
@@ -31,7 +31,7 @@
   margin: 0;
   padding: 40px 48px 40px 64px;
   list-style: none;
-  background: #f06f61;
+  background: var(--coral-text);
   color: #fff;
 }
 

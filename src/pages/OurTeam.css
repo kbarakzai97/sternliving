@@ -42,7 +42,7 @@
 
 .leader__name {
   margin: 0 0 32px;
-  color: #f06f61;
+  color: var(--coral-text);
   font-size: 28px;
   font-weight: 400;
   line-height: 1.5;
@@ -78,7 +78,7 @@
 
 .philosophy__eyebrow {
   margin: 0 0 8px;
-  color: #f06f61;
+  color: var(--coral-on-dark);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -117,8 +117,8 @@
 }
 
 .philosophy__item:hover {
-  background: #f06f61;
-  border-color: #f06f61;
+  background: var(--coral-text);
+  border-color: var(--coral-text);
   transform: translateX(6px);
 }
 
@@ -130,8 +130,9 @@
   flex: 0 0 auto;
   width: 30px;
   height: 30px;
-  object-fit: contain;
   border-radius: 50%;
+  /* These sit on navy cards, so use the lighter coral. */
+  --check-color: var(--coral-on-dark);
   transition: box-shadow 0.2s ease;
 }
 
@@ -168,7 +169,7 @@
 
 .team-info__heading {
   margin: 0 0 24px;
-  color: #f06f61;
+  color: var(--coral-text);
   font-size: 28px;
   font-weight: 400;
 }
@@ -199,7 +200,7 @@
   gap: 12px;
 }
 
-.team-info__list img {
+.team-info__list .check-icon {
   flex: 0 0 auto;
   width: 24px;
   height: 24px;

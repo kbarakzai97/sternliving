@@ -10,7 +10,7 @@
 
 .visit__eyebrow {
   margin: 0 0 12px;
-  color: #f06f61;
+  color: var(--coral-on-dark);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -54,7 +54,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #f06f61;
+  background: var(--coral);
   color: #fff;
 }
 
@@ -85,7 +85,7 @@
 }
 
 a.visit__value:hover {
-  color: #f06f61;
+  color: var(--coral-on-dark);
 }
 
 .visit__status {
@@ -98,7 +98,7 @@ a.visit__value:hover {
 }
 
 .visit__status--open {
-  background: #3f9d6b;
+  background: var(--success);
 }
 
 .visit__map-card {
@@ -174,9 +174,9 @@ a.visit__value:hover {
 
 .visit__button {
   padding: 11px 22px;
-  border: 2px solid #f06f61;
+  border: 2px solid var(--coral-text);
   border-radius: 6px;
-  background: #f06f61;
+  background: var(--coral-text);
   color: #fff;
   font-size: 15px;
   font-weight: 600;
@@ -205,12 +205,17 @@ a.visit__value:hover {
   color: #1b2f5e;
 }
 
+.visit--light .visit__eyebrow,
+.visit--light a.visit__value:hover {
+  color: var(--coral-text);
+}
+
 .visit--light .visit__text {
   color: #4a5670;
 }
 
 .visit--light .visit__label {
-  color: #8a93a8;
+  color: var(--muted);
 }
 
 .visit--light .visit__value {
