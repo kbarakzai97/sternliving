@@ -39,7 +39,7 @@ function HomePage() {
       <Testimonials />
       <Recognition />
       <VisitUs />
-      <JoinCommunity />
+      {/* <JoinCommunity /> */}
     </>
   )
 }
