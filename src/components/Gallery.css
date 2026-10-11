@@ -1,9 +1,9 @@
 .gallery {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
   align-items: center;
   gap: 56px;
-  max-width: 1160px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 88px 40px;
 }
@@ -93,7 +93,7 @@
 .gallery__image {
   flex: 0 0 100%;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 5 / 4;
   object-fit: cover;
   display: block;
 }
