@@ -12,6 +12,7 @@ function Hero({
   ctaHref,
   secondaryCtaLabel,
   secondaryCtaHref,
+  onSecondaryCtaClick,
 }) {
   return (
     <section className="hero" id="home">
@@ -25,7 +26,11 @@ function Hero({
               {ctaLabel}
             </a>
             {secondaryCtaLabel && (
-              <a href={secondaryCtaHref} className="hero__cta hero__cta--secondary">
+              <a
+                href={secondaryCtaHref}
+                onClick={onSecondaryCtaClick}
+                className="hero__cta hero__cta--secondary"
+              >
                 {secondaryCtaLabel}
               </a>
             )}

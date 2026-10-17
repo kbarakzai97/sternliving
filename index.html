@@ -24,6 +24,16 @@
       />
     </noscript>
     <script>
+      // Scroll-reveal animations (src/scrollReveal.js). Set before first paint so content doesn't flash;
+      // if the app never starts, show everything anyway after a few seconds.
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('reveal')
+        setTimeout(() => {
+          if (!window.__revealReady) document.documentElement.classList.remove('reveal')
+        }, 4000)
+      }
+    </script>
+    <script>
       // The hero image is the LCP element on the home page; start fetching it before the JS bundle runs.
       if (location.pathname === '%BASE_URL%') {
         const l = document.createElement('link')

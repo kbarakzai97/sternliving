@@ -13,6 +13,8 @@ import VisitUs from './components/VisitUs'
 import JoinCommunity from './components/JoinCommunity'
 import Footer from './components/Footer'
 import pages from './routes'
+import { startScrollReveal } from './scrollReveal'
+import { CALENDLY_URL, openCalendly } from './calendly'
 import { withBase } from './url'
 
 function HomePage() {
@@ -29,7 +31,8 @@ function HomePage() {
         ctaLabel="Call Now"
         ctaHref="tel:+12406103769"
         secondaryCtaLabel="Schedule a Visit"
-        secondaryCtaHref={withBase('/contact')}
+        secondaryCtaHref={CALENDLY_URL}
+        onSecondaryCtaClick={openCalendly}
       />
       <About />
       <Services />
@@ -49,6 +52,8 @@ function App({ path = window.location.pathname.slice(import.meta.env.BASE_URL.le
   const Page = pages[path.replace(/\/$/, '')] ?? HomePage
 
   // Sections render after the browser's initial jump, so scroll to "/#about"-style links once mounted.
+  useEffect(() => startScrollReveal(), [])
+
   useEffect(() => {
     if (window.location.hash) {
       document.querySelector(window.location.hash)?.scrollIntoView()

@@ -1,4 +1,5 @@
 import philosophyImg from '../assets/team-philosophy.webp'
+import rebeccaImg from '../assets/rebecca.webp'
 import CheckIcon from '../components/CheckIcon'
 import paintingImg from '../assets/team-painting.webp'
 import diningImg from '../assets/team-dining.webp'
@@ -38,8 +39,11 @@ function OurTeam() {
       </section>
 
       <section className="leader">
-        {/* TODO: replace with a photo of Rebecca */}
-        <div className="leader__photo" role="img" aria-label="Photo of Rebecca Yeboah" />
+        <img
+          src={rebeccaImg}
+          className="leader__photo"
+          alt="Rebecca Yeboah, Assisted Living Manager at Stern Life"
+        />
         <div className="leader__bio">
           <h2 className="leader__name">
             Rebecca Yeboah BSN

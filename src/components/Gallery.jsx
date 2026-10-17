@@ -7,6 +7,8 @@ import bath2Img from '../assets/home_bath2.webp'
 import bedroom3Img from '../assets/home_bedroom3.webp'
 import bedroomImg from '../assets/home_bedroom.webp'
 import bathImg from '../assets/home_bath.webp'
+import room1Img from '../assets/room1.webp'
+import room2Img from '../assets/room2.webp'
 import './Gallery.css'
 
 const features = [
@@ -40,6 +42,14 @@ const photos = [
   {
     src: bathImg,
     alt: 'Bathroom with a wall-mounted sink and round mirror',
+  },
+  {
+    src: room1Img,
+    alt: 'Spacious living room with light blue walls, a velvet armchair, and wood-look floors',
+  },
+  {
+    src: room2Img,
+    alt: 'Dining area decorated with balloons and a table set for a resident birthday party',
   },
 ]
 

@@ -31,7 +31,10 @@
 
 .leader__photo {
   flex: 0 0 38%;
+  width: 38%;
   aspect-ratio: 9 / 8;
+  object-fit: cover;
+  display: block;
   background: #d9d9d9;
 }
 

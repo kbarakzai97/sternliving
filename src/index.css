@@ -44,3 +44,32 @@ textarea {
 #root {
   min-height: 100svh;
 }
+
+/* Scroll reveal: see src/scrollReveal.js. Keep these selectors in sync with REVEAL_TARGETS there. */
+.reveal
+  :is(
+    main > section:not(:first-child):not(.hero) > :not(.services__grid, .why__list, .promise__grid),
+    .services__grid > li,
+    .why__list > li,
+    .promise__grid > li,
+    .philosophy__list > li
+  ) {
+  opacity: 0;
+}
+
+/* `translate` (not `transform`) so cards keep their own hover transforms. */
+.reveal [data-revealed] {
+  animation: reveal-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms) both;
+}
+
+@keyframes reveal-in {
+  from {
+    opacity: 0;
+    translate: 0 28px;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
