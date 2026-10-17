@@ -27,7 +27,7 @@
 }
 
 .stats__value {
-  color: var(--coral-on-dark);
+  color: #e6d3b3;
   font-size: 56px;
   font-weight: 700;
   line-height: 1;
