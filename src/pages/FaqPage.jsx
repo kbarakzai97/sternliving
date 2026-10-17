@@ -1,3 +1,4 @@
+import { CALENDLY_URL, openCalendly } from '../calendly'
 import './FaqPage.css'
 
 const faqs = [
@@ -197,7 +198,7 @@ function FaqPage() {
         <p className="faq-cta__text">
           We’re happy to speak with you personally.
         </p>
-        <a href="tel:+12406103769" className="faq-cta__button">
+        <a href={CALENDLY_URL} className="faq-cta__button" onClick={openCalendly}>
           Schedule a Tour Today
         </a>
       </section>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { withBase } from '../url'
+import { CALENDLY_URL, openCalendly } from '../calendly'
 import CheckIcon from './CheckIcon'
 import livingImg from '../assets/home_living.webp'
 import bedroom2Img from '../assets/home_bedroom2.webp'
@@ -135,7 +135,7 @@ function Gallery() {
           Photos only tell part of the story. Come see the homes in person and
           meet the people who make them feel like family.
         </p>
-        <a href={withBase('/contact')} className="gallery__cta">
+        <a href={CALENDLY_URL} className="gallery__cta" onClick={openCalendly}>
           Schedule a Private Tour
         </a>
       </div>
