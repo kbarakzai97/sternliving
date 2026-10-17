@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import TopBar from './components/TopBar'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Stats from './components/Stats'
 import About from './components/About'
 import Services from './components/Services'
 import WhyChooseUs from './components/WhyChooseUs'
@@ -34,6 +35,7 @@ function HomePage() {
         secondaryCtaHref={CALENDLY_URL}
         onSecondaryCtaClick={openCalendly}
       />
+      <Stats />
       <About />
       <Services />
       <WhyChooseUs />

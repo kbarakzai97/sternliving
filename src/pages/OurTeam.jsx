@@ -5,6 +5,13 @@ import paintingImg from '../assets/team-painting.webp'
 import diningImg from '../assets/team-dining.webp'
 import './OurTeam.css'
 
+const credentials = [
+  { short: '15+', full: 'Years in Senior Care' },
+  { short: 'BSN', full: 'Bachelor of Science in Nursing' },
+  { short: 'CNA', full: 'Certified Nursing Assistant' },
+  { short: 'CMT', full: 'Certified Medication Technician' },
+]
+
 const beliefs = [
   'Every resident has a unique story',
   'Care plans should be individualized',
@@ -39,18 +46,25 @@ function OurTeam() {
       </section>
 
       <section className="leader">
-        <img
-          src={rebeccaImg}
-          className="leader__photo"
-          alt="Rebecca Yeboah, Assisted Living Manager at Stern Life"
-        />
+        <div className="leader__media">
+          <img
+            src={rebeccaImg}
+            className="leader__photo"
+            alt="Rebecca Yeboah, Assisted Living Manager at Stern Life"
+          />
+          <ul className="leader__credentials">
+            {credentials.map(({ short, full }) => (
+              <li className="leader__credential" key={short}>
+                <strong>{short}</strong>
+                <span>{full}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
         <div className="leader__bio">
-          <h2 className="leader__name">
-            Rebecca Yeboah BSN
-            <br />
-            Assisted Living Manager (ALM)
-          </h2>
-          <p>
+          <h2 className="leader__name">Rebecca Yeboah, BSN</h2>
+          <p className="leader__role">Assisted Living Manager (ALM)</p>
+          <p className="leader__lead">
             Rebecca Yeboah brings over 15 years of experience in the senior care
             industry to Stern Life Assisted Living. Throughout her career, she
             has worked across every level of senior living — from large
@@ -75,8 +89,10 @@ function OurTeam() {
           <p>
             Known for her warm personality and welcoming smile, Rebecca creates
             an atmosphere where residents feel respected, valued, and
-            understood. Caring is not just her profession — it is her passion
-            and calling.
+            understood.
+          </p>
+          <p className="leader__callout">
+            Caring is not just her profession — it is her passion and calling.
           </p>
           <p>
             Under her leadership, Stern Life maintains a strong commitment to

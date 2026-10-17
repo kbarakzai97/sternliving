@@ -21,40 +21,91 @@
 }
 
 .leader {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 64px 40px;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  align-items: start;
+  gap: 72px;
+  padding: 88px max(40px, calc((100% - 1120px) / 2));
+  background: #faf7f2;
 }
 
 .leader__photo {
-  flex: 0 0 38%;
-  width: 38%;
-  aspect-ratio: 9 / 8;
+  width: 100%;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   display: block;
+  border-radius: 16px;
   background: #d9d9d9;
+  box-shadow: 0 20px 40px rgba(27, 42, 74, 0.14);
 }
 
-.leader__bio {
-  flex: 1 1 0;
+.leader__credentials {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.leader__credential {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px;
   text-align: center;
 }
 
-.leader__name {
-  margin: 0 0 32px;
+.leader__credential strong {
   color: var(--coral-text);
   font-size: 28px;
-  font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.1;
 }
 
-.leader__bio p {
-  margin: 0 0 24px;
+.leader__credential span {
+  color: #1b2f5e;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.leader__name {
+  margin: 0 0 8px;
+  color: #1b2f5e;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.leader__role {
+  margin: 0 0 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e3ddd3;
+  color: var(--coral-text);
+  font-size: 20px;
+}
+
+.leader__bio p:not(.leader__role) {
+  margin: 0 0 20px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.leader__bio .leader__lead {
+  color: #1b2f5e;
+  font-size: 19px;
   line-height: 1.6;
-  color: black;
+}
+
+.leader__bio .leader__callout {
+  margin: 32px 0;
+  padding: 4px 0 4px 24px;
+  border-left: 4px solid var(--coral);
+  color: #1b2f5e;
+  font-size: 22px;
+  line-height: 1.45;
 }
 
 .leader__bio p:last-child {
@@ -218,24 +269,33 @@
     font-size: 24px;
   }
 
-  .leader,
   .team-info__row,
   .team-info__row--reverse {
     flex-direction: column;
   }
 
   .leader {
-    padding: 40px 24px;
-    gap: 32px;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 56px 24px;
   }
 
-  .leader__photo {
-    flex: none;
+  .leader__media {
     width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
   }
 
   .leader__name {
-    font-size: 22px;
+    font-size: 30px;
+  }
+
+  .leader__role {
+    font-size: 18px;
+  }
+
+  .leader__bio .leader__callout {
+    font-size: 19px;
   }
 
   .philosophy {
