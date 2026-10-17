@@ -78,7 +78,8 @@ function Footer() {
 
       <p className="footer__bottom">
         © {new Date().getFullYear()} Stern Life Assisted Living. All rights
-        reserved.
+        reserved. <span aria-hidden="true">·</span>{' '}
+        <a href={withBase('/privacy-policy')}>Privacy Policy</a>
       </p>
     </footer>
   )
