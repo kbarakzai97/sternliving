@@ -1,13 +1,12 @@
 import { withBase } from '../url'
-import logo from '../assets/Stern Life Navy Serif Wordmark.webp'
+import logo from '../assets/logo.webp'
 import './Navbar.css'
 
 function Navbar() {
   return (
     <header className="navbar">
       <a href={withBase('/')} className="navbar__logo">
-        <img src={logo} alt="Stern Life" />
-        <span className="navbar__tagline">Residential Assisted Living</span>
+        <img src={logo} alt="Stern Life Assisted Living" />
       </a>
       <nav className="navbar__links">
         <div className="navbar__dropdown">

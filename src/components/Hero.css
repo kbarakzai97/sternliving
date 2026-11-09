@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   min-height: min(100svh, 880px);
-  background: #faf7f2;
+  background: #fdfdfd;
 }
 
 .hero__main {
